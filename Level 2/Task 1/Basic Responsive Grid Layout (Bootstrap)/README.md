@@ -19,10 +19,9 @@ A basic responsive grid layout using Bootstrap 5. It shows three variations:
 
 ## Notes
 
-- JS bundle is included but not necessary for grids
 - The `.box` class is custom to visualize columns
 
-## Ideas
+## Ideas for future.
 
 - Make cards inside each column
 - Add images and test equal-height behavior
