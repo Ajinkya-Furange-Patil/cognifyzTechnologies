@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hamburger Menu (No JS, we brave)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="nav.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a href="#" class="logo">Brand-ish</a>
+
+      <!-- The Checkbox Trick™ -->
+      <input
+        type="checkbox"
+        id="menuToggle"
+        class="menu-toggle"
+        aria-label="Toggle navigation"
+      />
+      <label for="menuToggle" class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="links">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <main class="content">
+      <h1>Welcome!</h1>
+      <p>
+        Resize the window. On small screens, the menu collapses into a
+        hamburger. On large screens, it chills horizontally.
+      </p>
+      <p>
+        No JavaScript was harmed in the making of this menu. Only CSS wizardry
+        and mild checkbox sorcery.
+      </p>
+    </main>
+  </body>
+</html>
