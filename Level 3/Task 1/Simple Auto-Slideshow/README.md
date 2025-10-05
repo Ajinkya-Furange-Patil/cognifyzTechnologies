@@ -5,7 +5,6 @@ A relaxing slideshow that changes photos every 4 seconds. Perfect for when you w
 ## Features
 
 - 5 photos rotate automatically
-- Captions with dad-joke level descriptions
 - Dots show which photo is current
 - No buttons to click - just sit and enjoy
 
