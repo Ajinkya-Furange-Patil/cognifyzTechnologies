@@ -18,7 +18,6 @@ A basic responsive grid layout using Bootstrap 5. It shows three variations:
 - Resize the browser to see items reflow
 
 ## Notes
-
 - The `.box` class is custom to visualize columns
 
 ## Ideas for future.
