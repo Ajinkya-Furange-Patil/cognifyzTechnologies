@@ -57,7 +57,7 @@ body {
   margin-top: 10px;
 }
 
-/* Desktop-ish default: 3 columns because we're feeling fancy */
+/* Desktop default: 3 columns */
 .grid {
   display: grid;
   gap: 18px;
