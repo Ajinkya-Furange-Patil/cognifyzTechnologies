@@ -57,7 +57,8 @@ body {
 
 /* Hamburger styles */
 .hamburger {
-  display: none; /* hidden on desktop */
+  display: none;
+  /*hiddenondesktop*/
   width: 40px;
   height: 36px;
   cursor: pointer;
@@ -66,6 +67,10 @@ body {
   flex-direction: column;
   gap: 5px;
   border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 .hamburger span {
@@ -79,7 +84,7 @@ body {
 /* Hide the checkbox but keep it focusable */
 .menu-toggle {
   position: absolute;
-  left: -9999px;
+  left: -20px;
 }
 
 /* Mobile layout: stack links, show hamburger */
@@ -121,10 +126,6 @@ body {
   /* turn the hamburger into an X because aesthetics */
   .menu-toggle:checked + .hamburger span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
-    -webkit-transform: translateY(8px) rotate(45deg);
-    -moz-transform: translateY(8px) rotate(45deg);
-    -ms-transform: translateY(8px) rotate(45deg);
-    -o-transform: translateY(8px) rotate(45deg);
   }
   .menu-toggle:checked + .hamburger span:nth-child(2) {
     opacity: 0;
