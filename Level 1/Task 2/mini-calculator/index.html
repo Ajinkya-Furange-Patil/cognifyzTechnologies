@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tiny Adder Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="shell">
+      <h1>Mini Calculator (Add Two Numbers)</h1>
+      <p>
+        Type two numbers and hit add. It will show the sum below. No fancy
+        scientific stuff here.
+      </p>
+
+      <form id="calcForm" class="grid" autocomplete="off">
+        <div class="field">
+          <label for="a">First number</label>
+          <input id="a" name="a" step="any" type="number" placeholder="e.g., 12.5 " />
+        </div>
+
+        <div class="field">
+          <label for="b">Second number</label>
+          <input id="b" name="b" step="any" type="number" placeholder="e.g., 7.2 " />
+        </div>
+
+        <button id="addBtn" class="btn" type="submit">Add</button>
+      </form>
+
+      <div id="result" class="result">
+        Result will appear here
+      </div>
+    </section>
+
+    <script src="calc.js"></script>
+  </body>
+</html>

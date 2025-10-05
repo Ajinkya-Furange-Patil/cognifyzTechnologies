@@ -1,0 +1,46 @@
+/* Basic styles - nothing fancy */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  /* Adding a subtle shadow because why not */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+/* responsive design - {I think this is basic part of learning!} */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+    margin: 10px;
+  }
+}
