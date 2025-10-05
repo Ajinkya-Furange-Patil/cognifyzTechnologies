@@ -1,0 +1,102 @@
+/* Gallery styles - keeping it friendly and not too fancy */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Georgia, "Times New Roman", serif; /* a bit old-school, readable */
+  background-color: #f5f5f0; /* cream-ish, easy on the eyes */
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+/* Gallery grid - starts simple, gets fancier on bigger screens */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.photo-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 3px solid #fff;
+}
+
+/* The magic happens here - click to enlarge */
+.thumbnail:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* When clicked, image gets bigger and centered */
+.thumbnail:active {
+  top: 50%;
+  left: 50%;
+  transform: translate(15%, -50%) scale(2.5);
+  z-index: 1001;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  cursor: zoom-out;
+}
+
+
+.gallery-footer {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+/* Mobile adjustments - because phones are small */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .thumbnail {
+    height: 150px;
+  }
+
+  .thumbnail:active {
+    transform: translate(-50%, -50%) scale(2);
+  }
+}
+
+/* For really small screens - one column */
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
