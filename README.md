@@ -20,6 +20,10 @@ cognifyzTechnologies/
 │       ├── basic/              # Simple webpage with heading, paragraph, image
 │       ├── contact-form/       # HTML form with CSS styling
 │       └── navbar/             # Responsive navigation menu
+|   └── Task 2/
+|       └── button-toggle/      # Button changes colour when clicked
+|       └── mini-calculator/    # Calculator that adds two numbers
+|       └── time-greeting/      # A button to see a greeting that changes based on the current hour
 ├── Level 2/                    # Front-end Frameworks & Responsive Design
 │   ├── Task 1/
 │   │   ├── Responsive Card Component/      # Bulma framework cards

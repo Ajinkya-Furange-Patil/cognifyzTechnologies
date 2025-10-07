@@ -1,6 +1,6 @@
 # Time-Based Greeting Alert
 
-Click a button to see a greeting that changes based on the current hour (or a fake hour you enter for testing).
+Click a button to see a greeting that changes based on the current hour.
 
 ## Files
 
