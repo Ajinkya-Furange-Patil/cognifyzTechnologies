@@ -215,7 +215,7 @@ The projects follow a consistent design approach:
 
 ## 📊 Project Statistics
 
-- **Total Commits:** 15
+- **Total Commits:** 16
 - **Languages:** HTML, CSS, JavaScript
 - **Frameworks Used:** Bulma, Bootstrap
 - **Total Projects:** 13 individual projects across 3 levels
@@ -259,7 +259,7 @@ in the Software without restriction...
 - **Project Repository:** [cognifyzTechnologies](https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies)
 - **PortFolio:** [Ajinkya Furange](https://ajinkyafurange.netlify.app)
 - **Email:** [Ajinkya Furange](ajinkyafurange@zohomail.in)
-- **Phone:** [Ajinkya Furange](+91 8108171769)
+- **Phone:** +91 8108171769
 
 ## 🙏 Acknowledgments
 
