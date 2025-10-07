@@ -40,7 +40,7 @@ cognifyzTechnologies/
 │       ├── logo.png            # Favicon and branding
 │       └── README.md           # Detailed documentation
 ├── LICENSE                     # MIT License
-└── README.md                  # This file
+└── README.md                   # This file
 ```
 
 ## 🚀 Project Highlights
