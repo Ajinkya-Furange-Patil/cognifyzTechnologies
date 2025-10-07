@@ -108,6 +108,12 @@ cognifyzTechnologies/
    - Smooth scrolling effects
    - Fixed header functionality
 
+4. _______________________________
+
+5. _______________________________
+
+6. _______________________________
+
 ### 🟡 Level 2 Tasks (Completed)
 
 1. **Framework Integration**
@@ -121,6 +127,10 @@ cognifyzTechnologies/
    - Mobile-first design approach
    - Cross-device compatibility
 
+3. _______________________________
+
+4. _______________________________
+
 ### 🔴 Level 3 Tasks (Completed)
 
 1. **Image Manipulation**
@@ -129,7 +139,9 @@ cognifyzTechnologies/
    - Automatic slideshow with smooth transitions
    - Advanced CSS animations
 
-2. **Professional Landing Page**
+2. _______________________________
+
+3. **Professional Landing Page**
    - Complete internship recruitment website
    - Glassmorphism navigation with blur effects
    - Interactive elements and smooth animations
@@ -203,10 +215,10 @@ The projects follow a consistent design approach:
 
 ## 📊 Project Statistics
 
-- **Total Commits:** 13
+- **Total Commits:** 15
 - **Languages:** HTML, CSS, JavaScript
 - **Frameworks Used:** Bulma, Bootstrap
-- **Total Projects:** 8 individual projects across 3 levels
+- **Total Projects:** 13 individual projects across 3 levels
 - **Documentation:** Comprehensive README files for each project
 
 ## 🤝 Contributing
@@ -245,6 +257,9 @@ in the Software without restriction...
 
 - **GitHub:** [@Ajinkya-Furange-Patil](https://github.com/Ajinkya-Furange-Patil)
 - **Project Repository:** [cognifyzTechnologies](https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies)
+- **PortFolio:** [Ajinkya Furange](https://ajinkyafurange.netlify.app)
+- **Email:** [Ajinkya Furange](ajinkyafurange@zohomail.in)
+- **Phone:** [Ajinkya Furange](+91 8108171769)
 
 ## 🙏 Acknowledgments
 
