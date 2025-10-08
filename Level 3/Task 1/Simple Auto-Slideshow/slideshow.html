@@ -4,10 +4,369 @@
     <meta charset="UTF-8" />
     <title>Photo Slideshow (Automatic, Like a Screensaver)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="slideshow.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 20px;
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #333;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      h1 {
+        color: white;
+        margin-bottom: 8px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .subtitle {
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 30px;
+        font-style: italic;
+      }
+
+      .slideshow-container {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto 20px;
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Navigation buttons */
+      .nav-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        font-size: 24px;
+        padding: 15px 20px;
+        cursor: pointer;
+        z-index: 10;
+        transition: background 0.3s ease;
+        border-radius: 5px;
+      }
+
+      .nav-btn:hover {
+        background: rgba(0, 0, 0, 0.8);
+      }
+
+      .prev-btn {
+        left: 10px;
+      }
+
+      .next-btn {
+        right: 10px;
+      }
+
+      .slide {
+        display: none;
+        position: relative;
+        animation-fill-mode: both;
+      }
+
+      .slide img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 15px;
+        font-size: 16px;
+      }
+
+      /* Animation for each slide - 4 seconds display, smooth transitions */
+      .slide1 {
+        animation: slideShow1 20s infinite;
+      }
+      .slide2 {
+        animation: slideShow2 20s infinite;
+      }
+      .slide3 {
+        animation: slideShow3 20s infinite;
+      }
+      .slide4 {
+        animation: slideShow4 20s infinite;
+      }
+      .slide5 {
+        animation: slideShow5 20s infinite;
+      }
+
+      @keyframes slideShow1 {
+        0% {
+          display: block;
+          opacity: 1;
+        }
+        18% {
+          display: block;
+          opacity: 1;
+        }
+        20% {
+          display: block;
+          opacity: 0;
+        }
+        20.01%,
+        100% {
+          display: none;
+          opacity: 0;
+        }
+      }
+
+      @keyframes slideShow2 {
+        0%,
+        19.99% {
+          display: none;
+          opacity: 0;
+        }
+        20% {
+          display: block;
+          opacity: 1;
+        }
+        38% {
+          display: block;
+          opacity: 1;
+        }
+        40% {
+          display: block;
+          opacity: 0;
+        }
+        40.01%,
+        100% {
+          display: none;
+          opacity: 0;
+        }
+      }
+
+      @keyframes slideShow3 {
+        0%,
+        39.99% {
+          display: none;
+          opacity: 0;
+        }
+        40% {
+          display: block;
+          opacity: 1;
+        }
+        58% {
+          display: block;
+          opacity: 1;
+        }
+        60% {
+          display: block;
+          opacity: 0;
+        }
+        60.01%,
+        100% {
+          display: none;
+          opacity: 0;
+        }
+      }
+
+      @keyframes slideShow4 {
+        0%,
+        59.99% {
+          display: none;
+          opacity: 0;
+        }
+        60% {
+          display: block;
+          opacity: 1;
+        }
+        78% {
+          display: block;
+          opacity: 1;
+        }
+        80% {
+          display: block;
+          opacity: 0;
+        }
+        80.01%,
+        100% {
+          display: none;
+          opacity: 0;
+        }
+      }
+
+      @keyframes slideShow5 {
+        0%,
+        79.99% {
+          display: none;
+          opacity: 0;
+        }
+        80% {
+          display: block;
+          opacity: 1;
+        }
+        98% {
+          display: block;
+          opacity: 1;
+        }
+        100% {
+          display: block;
+          opacity: 0;
+        }
+      }
+
+      /* Dots indicator */
+      .dots-container {
+        margin-bottom: 30px;
+      }
+
+      .dot {
+        height: 12px;
+        width: 12px;
+        margin: 0 5px;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+      }
+
+      .dot1 {
+        animation: dotActive1 20s infinite;
+      }
+      .dot2 {
+        animation: dotActive2 20s infinite;
+      }
+      .dot3 {
+        animation: dotActive3 20s infinite;
+      }
+      .dot4 {
+        animation: dotActive4 20s infinite;
+      }
+      .dot5 {
+        animation: dotActive5 20s infinite;
+      }
+
+      @keyframes dotActive1 {
+        0%,
+        20% {
+          background-color: white;
+          transform: scale(1.2);
+        }
+        20.01%,
+        100% {
+          background-color: rgba(255, 255, 255, 0.4);
+          transform: scale(1);
+        }
+      }
+
+      @keyframes dotActive2 {
+        0%,
+        19.99% {
+          background-color: rgba(255, 255, 255, 0.4);
+          transform: scale(1);
+        }
+        20%,
+        40% {
+          background-color: white;
+          transform: scale(1.2);
+        }
+        40.01%,
+        100% {
+          background-color: rgba(255, 255, 255, 0.4);
+          transform: scale(1);
+        }
+      }
+
+      @keyframes dotActive3 {
+        0%,
+        39.99% {
+          background-color: rgba(255, 255, 255, 0.4);
+          transform: scale(1);
+        }
+        40%,
+        60% {
+          background-color: white;
+          transform: scale(1.2);
+        }
+        60.01%,
+        100% {
+          background-color: rgba(255, 255, 255, 0.4);
+          transform: scale(1);
+        }
+      }
+
+      @keyframes dotActive4 {
+        0%,
+        59.99% {
+          background-color: rgba(255, 255, 255, 0.4);
+          transform: scale(1);
+        }
+        60%,
+        80% {
+          background-color: white;
+          transform: scale(1.2);
+        }
+        80.01%,
+        100% {
+          background-color: rgba(255, 255, 255, 0.4);
+          transform: scale(1);
+        }
+      }
+
+      @keyframes dotActive5 {
+        0%,
+        79.99% {
+          background-color: rgba(255, 255, 255, 0.4);
+          transform: scale(1);
+        }
+        80%,
+        100% {
+          background-color: white;
+          transform: scale(1.2);
+        }
+      }
+
+      .slideshow-footer {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 14px;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 10px;
+        }
+
+        .slide img {
+          height: 300px;
+        }
+
+        .caption {
+          font-size: 14px;
+          padding: 10px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+      }
+    </style>
   </head>
   <body>
-    
     <div class="container">
       <h1>Relaxing Photo Slideshow</h1>
       <p class="subtitle">
@@ -15,18 +374,20 @@
       </p>
 
       <div class="slideshow-container">
-        <!-- Each slide gets its turn automatically -->
+        <button class="nav-btn prev-btn" onclick="changeSlide(-1)">❮</button>
+        <button class="nav-btn next-btn" onclick="changeSlide(1)">❯</button>
+
         <div class="slide slide1">
           <img
-            src="https://art.pixilart.com/eb5420b5ad94a50.png"
-            alt="pixel Tree "
+            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop"
+            alt="Serene landscape"
           />
           <div class="caption">Photo 1: Nature being nature</div>
         </div>
 
         <div class="slide slide2">
           <img
-            src="C:\Users\ajink\OneDrive\Pictures\Screenshots\mc.png"
+            src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=500&fit=crop"
             alt="City architecture"
           />
           <div class="caption">Photo 2: Buildings reaching for the sky</div>
@@ -34,7 +395,7 @@
 
         <div class="slide slide3">
           <img
-            src="https://picsum.photos/800/500?random=12"
+            src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800&h=500&fit=crop"
             alt="Abstract pattern"
           />
           <div class="caption">Photo 3: Something artistic and mysterious</div>
@@ -42,7 +403,7 @@
 
         <div class="slide slide4">
           <img
-            src="https://picsum.photos/800/500?random=13"
+            src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&h=500&fit=crop"
             alt="Water scene"
           />
           <div class="caption">Photo 4: Water doing water things</div>
@@ -50,7 +411,7 @@
 
         <div class="slide slide5">
           <img
-            src="https://picsum.photos/800/500?random=14"
+            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop"
             alt="Mountain view"
           />
           <div class="caption">
@@ -59,7 +420,6 @@
         </div>
       </div>
 
-      <!-- Simple dots to show which slide is active -->
       <div class="dots-container">
         <span class="dot dot1"></span>
         <span class="dot dot2"></span>
@@ -75,5 +435,80 @@
         </p>
       </footer>
     </div>
+
+    <script>
+      let currentSlide = 0;
+      const totalSlides = 5;
+      let autoPlayInterval;
+
+      function showSlide(n) {
+        const slides = document.querySelectorAll(".slide");
+        const dots = document.querySelectorAll(".dot");
+
+        // Wrap around if needed
+        if (n >= totalSlides) {
+          currentSlide = 0;
+        } else if (n < 0) {
+          currentSlide = totalSlides - 1;
+        } else {
+          currentSlide = n;
+        }
+
+        // Remove all animations and hide all slides
+        slides.forEach((slide, index) => {
+          slide.style.animation = "none";
+          slide.style.display = "none";
+          slide.style.opacity = "0";
+        });
+
+        // Reset all dots
+        dots.forEach((dot) => {
+          dot.style.animation = "none";
+          dot.style.background = "rgba(255, 255, 255, 0.4)";
+          dot.style.transform = "scale(1)";
+        });
+
+        // Force reflow to reset animation
+        void slides[currentSlide].offsetWidth;
+
+        // Show current slide with fade in
+        slides[currentSlide].style.display = "block";
+        setTimeout(() => {
+          slides[currentSlide].style.opacity = "1";
+        }, 10);
+
+        // Highlight current dot
+        dots[currentSlide].style.background = "white";
+        dots[currentSlide].style.transform = "scale(1.2)";
+      }
+
+      function changeSlide(direction) {
+        // Stop auto-play when manually navigating
+        clearInterval(autoPlayInterval);
+
+        // Calculate new slide index
+        let newSlide = currentSlide + direction;
+
+        // Show the new slide
+        showSlide(newSlide);
+
+        // Restart auto-play
+        autoPlayInterval = setInterval(() => {
+          let nextSlide = currentSlide + 1;
+          showSlide(nextSlide);
+        }, 4000);
+      }
+
+      // Initialize with first slide
+      window.addEventListener("load", () => {
+        showSlide(0);
+
+        // Start auto-play
+        autoPlayInterval = setInterval(() => {
+          let nextSlide = currentSlide + 1;
+          showSlide(nextSlide);
+        }, 4000);
+      });
+    </script>
   </body>
 </html>
