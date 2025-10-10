@@ -215,7 +215,7 @@ The projects follow a consistent design approach:
 
 ## 📊 Project Statistics
 
-- **Total Commits:** 18
+- **Total Commits:** 21
 - **Languages:** HTML, CSS, JavaScript
 - **Frameworks Used:** Bulma, Bootstrap
 - **Total Projects:** 13 individual projects across 3 levels
