@@ -9,7 +9,7 @@ const PROJECTS = [
     description:
       "Responsive product-style landing page with glassmorphism and gradient accents.",
     thumb: "assets/thumbs/task1.jpg",
-    demo: "https://your-demo-link-task1.netlify.app/",
+    demo: "Level 1/Task 1/basic",
     source:
       "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/task-1",
   },
@@ -17,7 +17,7 @@ const PROJECTS = [
     title: "Task 2 - Interactive UI",
     description: "Micro-interactions, hover states, and modular components.",
     thumb: "assets/thumbs/task2.jpg",
-    demo: "https://your-demo-link-task2.netlify.app/",
+    demo: "Level 1/Task 2/button-toggle",
     source:
       "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/task-2",
   },
@@ -25,7 +25,7 @@ const PROJECTS = [
     title: "Task 3 - API Dashboard",
     description: "Data fetching, charts, and responsive cards.",
     thumb: "assets/thumbs/task3.jpg",
-    demo: "https://your-demo-link-task3.netlify.app/",
+    demo: "Level 2/Task 1/Basic Responsive Grid Layout (Bootstrap)",
     source:
       "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/task-3",
   },
