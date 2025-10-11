@@ -32,7 +32,7 @@ const PROJECTS = [
       "http://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%201/navbar",
   },
   {
-    title: "Task 4 - Changing Button Colour",
+    title: "Task 4 - Click Color Button",
     description:
       "A small demo where a button changes color when clicked. Nothing groundbreaking, just a clean toggle to show basic JS interaction.",
     thumb: "Level 1/Task 2/button-toggle/output.png",
@@ -41,7 +41,7 @@ const PROJECTS = [
       "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%202/button-toggle",
   },
   {
-    title: "Task 5 - Tiny Calculator",
+    title: "Task 5 - Mini Add-Only Calculator",
     description:
       "A tiny calculator that adds two numbers and shows the result below the form. Built to stay super simple.",
     thumb: "Level 1/Task 2/mini-calculator/output.png",
@@ -50,7 +50,7 @@ const PROJECTS = [
       "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%202/mini-calculator",
   },
   {
-    title: "Task 5 - Welcome Greeeting",
+    title: "Task 6 - Time-Based Greeting Alert",
     description:
       "Click a button to see a greeting that changes based on the current hour.",
     thumb: "Level 1/Task 2/time-greeting/output.png",
