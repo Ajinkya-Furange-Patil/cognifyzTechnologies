@@ -5,45 +5,58 @@
 // -----------------------------
 const PROJECTS = [
   {
-    title: "Task 1 - Landing Page",
+    title: "Task 1 - Basic Webpage Creation",
     description:
-      "Responsive product-style landing page with glassmorphism and gradient accents.",
-    thumb: "assets/thumbs/task1.jpg",
+      "HTML structure with heading, paragraph, and image CSS styling with responsive design Clean, modern aesthetic.",
+    thumb: "Level 1/Task 1/basic/output.png",
     demo: "Level 1/Task 1/basic",
     source:
-      "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/task-1",
+      "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%201/basic",
   },
   {
-    title: "Task 2 - Interactive UI",
-    description: "Micro-interactions, hover states, and modular components.",
-    thumb: "assets/thumbs/task2.jpg",
+    title: "Task 2 - Form Development",
+    description:
+      "HTML form with input validation, CSS styling with gradient backgrounds, User-friendly interface design.",
+    thumb: "Level 1/Task 1/contact-form/output.png",
+    demo: "Level 1/Task 1/contact-form",
+    source:
+      "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%201/contact-form",
+  },
+  {
+    title: "Task 3 - Navigation Implementation",
+    description:
+      "Responsive navigation bar, Smooth scrolling effects, Fixed header functionality.",
+    thumb: "Level 1/Task 1/navbar/output.png",
+    demo: "Level 1/Task 1/navbar",
+    source:
+      "http://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%201/navbar",
+  },
+  {
+    title: "Task 4 - Changing Button Colour",
+    description:
+      "A small demo where a button changes color when clicked. Nothing groundbreaking, just a clean toggle to show basic JS interaction.",
+    thumb: "Level 1/Task 2/button-toggle/output.png",
     demo: "Level 1/Task 2/button-toggle",
     source:
-      "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/task-2",
+      "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%202/button-toggle",
   },
   {
-    title: "Task 3 - API Dashboard",
-    description: "Data fetching, charts, and responsive cards.",
-    thumb: "assets/thumbs/task3.jpg",
-    demo: "Level 2/Task 1/Basic Responsive Grid Layout (Bootstrap)",
+    title: "Task 5 - Tiny Calculator",
+    description:
+      "A tiny calculator that adds two numbers and shows the result below the form. Built to stay super simple.",
+    thumb: "Level 1/Task 2/mini-calculator/output.png",
+    demo: "Level 1/Task 2/mini-calculator",
     source:
-      "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/task-3",
+      "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%202/mini-calculator",
   },
   {
-    title: "Task 4 - Auth + CRUD",
-    description: "Node.js + MySQL demo with JWT and CRUD flows.",
-    thumb: "assets/thumbs/task4.jpg",
-    demo: "https://your-demo-link-task4.netlify.app/",
+    title: "Task 5 - Welcome Greeeting",
+    description:
+      "Click a button to see a greeting that changes based on the current hour.",
+    thumb: "Level 1/Task 2/time-greeting/output.png",
+    demo: "Level 1/Task 2/time-greeting",
     source:
-      "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/task-4",
-  },
-  {
-    title: "Task 5 - Visualization",
-    description: "Canvas/WebGL visualizations with smooth animations.",
-    thumb: "assets/thumbs/task5.jpg",
-    demo: "https://your-demo-link-task5.netlify.app/",
-    source:
-      "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/task-5",
+      "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%202/time-greeting",
   },
 ];
 
