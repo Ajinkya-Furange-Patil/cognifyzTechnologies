@@ -67,31 +67,43 @@ const PROJECTS = [
     level: "Level 2",
     projects: [
       {
-        title: "Task 1 - Responsive Landing Page",
+        title: "Task 1 - Bootstrap Responsive Grid",
         description:
-          "A modern, mobile-friendly landing page built using HTML, CSS, and Flexbox/Grid layout techniques.",
-        thumb: "Level 2/Task 1/landing-page/output.png",
-        demo: "Level 2/Task 1/landing-page",
+          "A basic responsive grid layout using Bootstrap 5. It shows three variations.",
+        thumb:
+          "Level 2/Task 1/Basic Responsive Grid Layout (Bootstrap)/output.png",
+        demo: "Level 2/Task 1/Basic Responsive Grid Layout (Bootstrap)/",
         source:
-          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%202/Task%201/landing-page",
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%202/Task%201/Basic%20Responsive%20Grid%20Layout%20(Bootstrap)",
       },
       {
-        title: "Task 2 - Dynamic To-Do App",
+        title: "Task 2 - Bulma Card (Image + Text)",
         description:
-          "An interactive task management app built using JavaScript with localStorage for persistence.",
-        thumb: "Level 2/Task 2/todo/output.png",
-        demo: "Level 2/Task 2/todo",
+          "A simple, responsive card using Bulma. Includes an image, title, subtitle, content, and a couple of buttons. Added tiny custom CSS so it doesn’t look 100% boilerplate.",
+        thumb: "Level 2/Task 1/Responsive Card Component/DEMO.png",
+        demo: "Level 2/Task 1/Responsive Card Component",
         source:
-          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%202/Task%202/todo",
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%202/Task%201/Responsive%20Card%20Component",
       },
       {
-        title: "Task 3 - Weather API Integration",
+        title: "Task 3 - Responsive Page (Media Queries Edition)",
         description:
-          "A live weather application fetching real-time data from OpenWeatherMap API using async JS.",
-        thumb: "Level 2/Task 3/weather-app/output.png",
-        demo: "Level 2/Task 3/weather-app",
+          "A basic page that reshapes itself like a flexible cat — 3 columns on desktop, 2 on tablet, 1 on mobile. Nothing wild, just clean CSS with some jokes sprinkled in.",
+        thumb:
+          "Level 2/Task 2/Make a Basic Webpage Responsive (CSS Media Queries)/DEMO.png",
+        demo: "Level 2/Task 2/Make a Basic Webpage Responsive (CSS Media Queries)",
         source:
-          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%202/Task%203/weather-app",
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%202/Task%202/Make%20a%20Basic%20Webpage%20Responsive%20(CSS%20Media%20Queries)",
+      },
+      {
+        title: "Task 4 - Hamburger Menu (Pure CSS)",
+        description:
+          "A navigation bar that becomes a hamburger on smaller screens without a single line of JavaScript. Checkbox sorcery inside.",
+        thumb:
+          "Level 2/Task 2/Mobile-Friendly Hamburger Menu (Pure HTML + CSS)/demo.png",
+        demo: "Level 2/Task 2/Mobile-Friendly Hamburger Menu (Pure HTML + CSS)/nav.html",
+        source:
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%202/Task%202/Mobile-Friendly%20Hamburger%20Menu%20(Pure%20HTML%20%2B%20CSS)",
       },
     ],
   },
