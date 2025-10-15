@@ -104,15 +104,27 @@ cognifyzTechnologies/
    - User-friendly interface design
 
 3. **Navigation Implementation**
+
    - Responsive navigation bar
    - Smooth scrolling effects
    - Fixed header functionality
 
-4. _______________________________
+4. **Click Color Button**
 
-5. _______________________________
+   - Toggles a CSS class on click to swap colors
+   - Changes the button text (tiny UX detail)
 
-6. _______________________________
+5. **Click Color Button**
+
+   - Adds integers and decimals
+   - Handles commas in input (e.g., 1,234.56)
+   - Friendly error message if inputs are invalid
+   - Doesn’t reload the page on submit
+
+6. **Time-Based Greeting Alert**
+
+   - Uses `alert()` intentionally for simplicity
+   - Local device time is used
 
 ### 🟡 Level 2 Tasks (Completed)
 
@@ -123,13 +135,14 @@ cognifyzTechnologies/
    - Framework-specific best practices
 
 2. **Responsive Design**
+
    - CSS media queries implementation
    - Mobile-first design approach
    - Cross-device compatibility
 
-3. _______________________________
+3. ***
 
-4. _______________________________
+4. ***
 
 ### 🔴 Level 3 Tasks (Completed)
 
@@ -139,7 +152,7 @@ cognifyzTechnologies/
    - Automatic slideshow with smooth transitions
    - Advanced CSS animations
 
-2. _______________________________
+2. ***
 
 3. **Professional Landing Page**
    - Complete internship recruitment website
