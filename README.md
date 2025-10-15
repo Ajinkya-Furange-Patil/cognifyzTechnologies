@@ -144,7 +144,7 @@ cognifyzTechnologies/
 
    - ≤ 600px: single column (phone pocket mode)
    - ≤ 992px: two columns (tablet diet)
-   - > 992px: three columns (desktop flex)
+   - `> 992px: three columns (desktop flex)`
 
 4. **Hamburger Menu (Pure CSS)**
 
