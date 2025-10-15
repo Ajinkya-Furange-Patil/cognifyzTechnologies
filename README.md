@@ -159,7 +159,11 @@ cognifyzTechnologies/
    - Automatic slideshow with smooth transitions
    - Advanced CSS animations
 
-2. ***
+2. **Auto Photo Slideshow**
+
+   - 5 photos rotate automatically
+   - Dots show which photo is current
+   - No buttons to click - just sit and enjoy
 
 3. **Professional Landing Page**
    - Complete internship recruitment website
