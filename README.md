@@ -140,9 +140,16 @@ cognifyzTechnologies/
    - Mobile-first design approach
    - Cross-device compatibility
 
-3. ***
+3. **Responsive Page (Media Queries Edition)**
 
-4. ***
+   - ≤ 600px: single column (phone pocket mode)
+   - ≤ 992px: two columns (tablet diet)
+   - > 992px: three columns (desktop flex)
+
+4. **Hamburger Menu (Pure CSS)**
+
+   - Keyboard focus works on the hidden checkbox (we’re not monsters)
+   - Could add ARIA attributes with JS for extra accessibility points later
 
 ### 🔴 Level 3 Tasks (Completed)
 
