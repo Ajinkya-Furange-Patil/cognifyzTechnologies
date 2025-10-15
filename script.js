@@ -14,7 +14,7 @@ const PROJECTS = [
         thumb: "Level 1/Task 1/basic/output.png",
         demo: "Level 1/Task 1/basic",
         source:
-          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%201/basic",
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level 1/Task 1/basic",
       },
       {
         title: "Task 2 - Form Development",
@@ -23,7 +23,7 @@ const PROJECTS = [
         thumb: "Level 1/Task 1/contact-form/output.png",
         demo: "Level 1/Task 1/contact-form",
         source:
-          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%201/contact-form",
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level 1/Task 1/contact-form",
       },
       {
         title: "Task 3 - Navigation Implementation",
@@ -32,7 +32,7 @@ const PROJECTS = [
         thumb: "Level 1/Task 1/navbar/output.png",
         demo: "Level 1/Task 1/navbar",
         source:
-          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%201/navbar",
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level 1/Task 1/navbar",
       },
       {
         title: "Task 4 - Click Color Button",
@@ -41,7 +41,7 @@ const PROJECTS = [
         thumb: "Level 1/Task 2/button-toggle/output.png",
         demo: "Level 1/Task 2/button-toggle",
         source:
-          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%202/button-toggle",
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level 1/Task 2/button-toggle",
       },
       {
         title: "Task 5 - Mini Add-Only Calculator",
@@ -50,7 +50,7 @@ const PROJECTS = [
         thumb: "Level 1/Task 2/mini-calculator/output.png",
         demo: "Level 1/Task 2/mini-calculator",
         source:
-          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%202/mini-calculator",
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level 1/Task 2/mini-calculator",
       },
       {
         title: "Task 6 - Time-Based Greeting Alert",
@@ -59,7 +59,7 @@ const PROJECTS = [
         thumb: "Level 1/Task 2/time-greeting/output.png",
         demo: "Level 1/Task 2/time-greeting",
         source:
-          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%202/time-greeting",
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level 1/Task 2/time-greeting",
       },
     ],
   },
@@ -74,7 +74,7 @@ const PROJECTS = [
           "Level 2/Task 1/Basic Responsive Grid Layout (Bootstrap)/output.png",
         demo: "Level 2/Task 1/Basic Responsive Grid Layout (Bootstrap)/",
         source:
-          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%202/Task%201/Basic%20Responsive%20Grid%20Layout%20(Bootstrap)",
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level 2/Task 1/Basic Responsive Grid Layout (Bootstrap)",
       },
       {
         title: "Task 2 - Bulma Card (Image + Text)",
@@ -83,7 +83,7 @@ const PROJECTS = [
         thumb: "Level 2/Task 1/Responsive Card Component/DEMO.png",
         demo: "Level 2/Task 1/Responsive Card Component",
         source:
-          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%202/Task%201/Responsive%20Card%20Component",
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level 2/Task 1/Responsive Card Component",
       },
       {
         title: "Task 3 - Responsive Page (Media Queries Edition)",
@@ -93,7 +93,7 @@ const PROJECTS = [
           "Level 2/Task 2/Make a Basic Webpage Responsive (CSS Media Queries)/DEMO.png",
         demo: "Level 2/Task 2/Make a Basic Webpage Responsive (CSS Media Queries)",
         source:
-          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%202/Task%202/Make%20a%20Basic%20Webpage%20Responsive%20(CSS%20Media%20Queries)",
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level 2/Task 2/Make a Basic Webpage Responsive (CSS Media Queries)",
       },
       {
         title: "Task 4 - Hamburger Menu (Pure CSS)",
@@ -103,7 +103,7 @@ const PROJECTS = [
           "Level 2/Task 2/Mobile-Friendly Hamburger Menu (Pure HTML + CSS)/demo.png",
         demo: "Level 2/Task 2/Mobile-Friendly Hamburger Menu (Pure HTML + CSS)/nav.html",
         source:
-          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%202/Task%202/Mobile-Friendly%20Hamburger%20Menu%20(Pure%20HTML%20%2B%20CSS)",
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level 2/Task 2/Mobile-Friendly Hamburger Menu (Pure HTML %2B CSS)",
       },
     ],
   },
@@ -111,31 +111,33 @@ const PROJECTS = [
     level: "Level 3",
     projects: [
       {
-        title: "Task 1 - Full Stack Login System",
+        title: "Task 1 - Click-to-Enlarge Photo Gallery",
         description:
-          "Node.js + Express authentication system using MySQL database and bcrypt password hashing.",
-        thumb: "Level 3/Task 1/login-system/output.png",
-        demo: "Level 3/Task 1/login-system",
+          "A simple photo gallery where you click thumbnails to see them bigger. No fancy JavaScript popups, just CSS doing its thing.",
+        thumb:
+          "Level 3/Task 1/CSS Image Gallery with Click-to-Enlarge/demo.png",
+        demo: "Level 3/Task 1/CSS Image Gallery with Click-to-Enlarge/gallery.html",
         source:
-          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%203/Task%201/login-system",
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level 3/Task 1/CSS Image Gallery with Click-to-Enlarge",
       },
       {
-        title: "Task 2 - Product Management Dashboard",
+        title: "Task 2 - Auto Photo Slideshow",
         description:
-          "A CRUD web application with Node.js backend and MySQL integration for product management.",
-        thumb: "Level 3/Task 2/dashboard/output.png",
-        demo: "Level 3/Task 2/dashboard",
+          "A relaxing slideshow that changes photos every 4 seconds. Perfect for when you want to look busy but actually just want to see pretty pictures.",
+        thumb: "Level 3/Task 1/Simple Auto-Slideshow/demo.png",
+        demo: "Level 3/Task 1/Simple Auto-Slideshow/slideshow.html",
         source:
-          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%203/Task%202/dashboard",
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level 3/Task 1/Simple Auto-Slideshow",
       },
       {
-        title: "Task 3 - E-Commerce Prototype",
+        title:
+          "Task 3 - Cognifyz Technologies - Web Developer Internship Landing Page",
         description:
-          "An e-commerce front-end prototype with cart functionality and order flow simulation.",
-        thumb: "Level 3/Task 3/ecommerce/output.png",
-        demo: "Level 3/Task 3/ecommerce",
+          "Built this landing page for Cognifyz Technologies' internship program. It's got all the info a student needs - benefits, perks, terms, and how to apply. Added a fancy navbar because, well, first impressions matter!",
+        thumb: "Level 3/Task 2/demo.png",
+        demo: "Level 3/Task 2/",
         source:
-          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%203/Task%203/ecommerce",
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level 3/Task 2",
       },
     ],
   },
