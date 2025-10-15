@@ -200,7 +200,7 @@ Through this internship program, I gained practical experience in:
 2. **Navigate to any project folder:**
 
    ```bash
-   cd cognifyzTechnologies/Level\ 1/Task\ 1/basic/
+   cd cognifyzTechnologies/Level 1 /Task 1/basic/
    ```
 
 3. **Open the HTML file:**
@@ -239,7 +239,7 @@ The projects follow a consistent design approach:
 
 ## 📊 Project Statistics
 
-- **Total Commits:** 34
+- **Total Commits:** 35
 - **Languages:** HTML, CSS, JavaScript
 - **Frameworks Used:** Bulma, Bootstrap
 - **Total Projects:** 13 individual projects across 3 levels
