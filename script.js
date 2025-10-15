@@ -5,60 +5,130 @@
 // -----------------------------
 const PROJECTS = [
   {
-    title: "Task 1 - Basic Webpage Creation",
-    description:
-      "HTML structure with heading, paragraph, and image CSS styling with responsive design Clean, modern aesthetic.",
-    thumb: "Level 1/Task 1/basic/output.png",
-    demo: "Level 1/Task 1/basic",
-    source:
-      "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%201/basic",
+    level: "Level 1",
+    projects: [
+      {
+        title: "Task 1 - Basic Webpage Creation",
+        description:
+          "HTML structure with heading, paragraph, and image CSS styling with responsive design Clean, modern aesthetic.",
+        thumb: "Level 1/Task 1/basic/output.png",
+        demo: "Level 1/Task 1/basic",
+        source:
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%201/basic",
+      },
+      {
+        title: "Task 2 - Form Development",
+        description:
+          "HTML form with input validation, CSS styling with gradient backgrounds, User-friendly interface design.",
+        thumb: "Level 1/Task 1/contact-form/output.png",
+        demo: "Level 1/Task 1/contact-form",
+        source:
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%201/contact-form",
+      },
+      {
+        title: "Task 3 - Navigation Implementation",
+        description:
+          "Responsive navigation bar, Smooth scrolling effects, Fixed header functionality.",
+        thumb: "Level 1/Task 1/navbar/output.png",
+        demo: "Level 1/Task 1/navbar",
+        source:
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%201/navbar",
+      },
+      {
+        title: "Task 4 - Click Color Button",
+        description:
+          "A small demo where a button changes color when clicked. Nothing groundbreaking, just a clean toggle to show basic JS interaction.",
+        thumb: "Level 1/Task 2/button-toggle/output.png",
+        demo: "Level 1/Task 2/button-toggle",
+        source:
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%202/button-toggle",
+      },
+      {
+        title: "Task 5 - Mini Add-Only Calculator",
+        description:
+          "A tiny calculator that adds two numbers and shows the result below the form. Built to stay super simple.",
+        thumb: "Level 1/Task 2/mini-calculator/output.png",
+        demo: "Level 1/Task 2/mini-calculator",
+        source:
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%202/mini-calculator",
+      },
+      {
+        title: "Task 6 - Time-Based Greeting Alert",
+        description:
+          "Click a button to see a greeting that changes based on the current hour.",
+        thumb: "Level 1/Task 2/time-greeting/output.png",
+        demo: "Level 1/Task 2/time-greeting",
+        source:
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%202/time-greeting",
+      },
+    ],
   },
   {
-    title: "Task 2 - Form Development",
-    description:
-      "HTML form with input validation, CSS styling with gradient backgrounds, User-friendly interface design.",
-    thumb: "Level 1/Task 1/contact-form/output.png",
-    demo: "Level 1/Task 1/contact-form",
-    source:
-      "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%201/contact-form",
+    level: "Level 2",
+    projects: [
+      {
+        title: "Task 1 - Responsive Landing Page",
+        description:
+          "A modern, mobile-friendly landing page built using HTML, CSS, and Flexbox/Grid layout techniques.",
+        thumb: "Level 2/Task 1/landing-page/output.png",
+        demo: "Level 2/Task 1/landing-page",
+        source:
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%202/Task%201/landing-page",
+      },
+      {
+        title: "Task 2 - Dynamic To-Do App",
+        description:
+          "An interactive task management app built using JavaScript with localStorage for persistence.",
+        thumb: "Level 2/Task 2/todo/output.png",
+        demo: "Level 2/Task 2/todo",
+        source:
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%202/Task%202/todo",
+      },
+      {
+        title: "Task 3 - Weather API Integration",
+        description:
+          "A live weather application fetching real-time data from OpenWeatherMap API using async JS.",
+        thumb: "Level 2/Task 3/weather-app/output.png",
+        demo: "Level 2/Task 3/weather-app",
+        source:
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%202/Task%203/weather-app",
+      },
+    ],
   },
   {
-    title: "Task 3 - Navigation Implementation",
-    description:
-      "Responsive navigation bar, Smooth scrolling effects, Fixed header functionality.",
-    thumb: "Level 1/Task 1/navbar/output.png",
-    demo: "Level 1/Task 1/navbar",
-    source:
-      "http://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%201/navbar",
-  },
-  {
-    title: "Task 4 - Click Color Button",
-    description:
-      "A small demo where a button changes color when clicked. Nothing groundbreaking, just a clean toggle to show basic JS interaction.",
-    thumb: "Level 1/Task 2/button-toggle/output.png",
-    demo: "Level 1/Task 2/button-toggle",
-    source:
-      "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%202/button-toggle",
-  },
-  {
-    title: "Task 5 - Mini Add-Only Calculator",
-    description:
-      "A tiny calculator that adds two numbers and shows the result below the form. Built to stay super simple.",
-    thumb: "Level 1/Task 2/mini-calculator/output.png",
-    demo: "Level 1/Task 2/mini-calculator",
-    source:
-      "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%202/mini-calculator",
-  },
-  {
-    title: "Task 6 - Time-Based Greeting Alert",
-    description:
-      "Click a button to see a greeting that changes based on the current hour.",
-    thumb: "Level 1/Task 2/time-greeting/output.png",
-    demo: "Level 1/Task 2/time-greeting",
-    source:
-      "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%201/Task%202/time-greeting",
+    level: "Level 3",
+    projects: [
+      {
+        title: "Task 1 - Full Stack Login System",
+        description:
+          "Node.js + Express authentication system using MySQL database and bcrypt password hashing.",
+        thumb: "Level 3/Task 1/login-system/output.png",
+        demo: "Level 3/Task 1/login-system",
+        source:
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%203/Task%201/login-system",
+      },
+      {
+        title: "Task 2 - Product Management Dashboard",
+        description:
+          "A CRUD web application with Node.js backend and MySQL integration for product management.",
+        thumb: "Level 3/Task 2/dashboard/output.png",
+        demo: "Level 3/Task 2/dashboard",
+        source:
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%203/Task%202/dashboard",
+      },
+      {
+        title: "Task 3 - E-Commerce Prototype",
+        description:
+          "An e-commerce front-end prototype with cart functionality and order flow simulation.",
+        thumb: "Level 3/Task 3/ecommerce/output.png",
+        demo: "Level 3/Task 3/ecommerce",
+        source:
+          "https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/tree/main/Level%203/Task%203/ecommerce",
+      },
+    ],
   },
 ];
+const projectsContainer = document.getElementById("projectsContainer");
 
 // -----------------------------
 // Helpers
@@ -154,41 +224,54 @@ const projectsGrid = document.getElementById("projectsGrid");
 const loadingScreen = document.getElementById("loadingScreen");
 
 function renderProjects() {
-  if (!projectsGrid) return;
-  projectsGrid.innerHTML = "";
-  PROJECTS.forEach((p) => {
-    const card = el("article", "project-card");
-    const thumb = el("div", "project-thumb");
-    const img = el("img");
-    img.setAttribute("alt", p.title);
-    img.setAttribute("loading", "lazy");
-    img.dataset.src = p.thumb || "assets/thumbs/placeholder.jpg";
-    thumb.appendChild(img);
-    thumb.appendChild(el("div", "thumb-glow"));
+  projectsContainer.innerHTML = "";
 
-    if (lazyObserver) lazyObserver.observe(img);
-    else img.src = img.dataset.src;
+  PROJECTS.forEach((level) => {
+    const levelSection = el("div", "level-section");
+    const levelTitle = el(
+      "h3",
+      "level-heading gradient-text",
+      `${level.level}`
+    );
+    levelSection.appendChild(levelTitle);
 
-    const body = el("div", "project-body");
-    const title = el("h3", "project-title", p.title);
-    const desc = el("p", "project-desc", p.description);
-    const actions = el("div", "project-actions");
-    const demoBtn = el("a", "btn btn-primary");
-    demoBtn.href = p.demo || "#";
-    demoBtn.target = "_blank";
-    demoBtn.rel = "noopener";
-    demoBtn.innerHTML = '<i class="fas fa-play"></i> Live Demo';
+    const grid = el("div", "projects-grid");
 
-    const codeBtn = el("a", "btn btn-secondary");
-    codeBtn.href = p.source || "#";
-    codeBtn.target = "_blank";
-    codeBtn.rel = "noopener";
-    codeBtn.innerHTML = '<i class="fab fa-github"></i> Source Code';
+    level.projects.forEach((p) => {
+      const card = el("article", "project-card");
+      const thumb = el("div", "project-thumb");
+      const img = el("img");
+      img.setAttribute("alt", p.title);
+      img.setAttribute("loading", "lazy");
+      img.dataset.src = p.thumb || "assets/thumbs/placeholder.jpg";
+      thumb.appendChild(img);
+      thumb.appendChild(el("div", "thumb-glow"));
+      if (lazyObserver) lazyObserver.observe(img);
+      else img.src = img.dataset.src;
 
-    actions.append(demoBtn, codeBtn);
-    body.append(title, desc, actions);
-    card.append(thumb, body);
-    projectsGrid.appendChild(card);
+      const body = el("div", "project-body");
+      const title = el("h3", "project-title", p.title);
+      const desc = el("p", "project-desc", p.description);
+
+      const actions = el("div", "project-actions");
+      const demoBtn = el("a", "btn btn-primary");
+      demoBtn.href = p.demo;
+      demoBtn.target = "_blank";
+      demoBtn.innerHTML = '<i class="fas fa-play"></i> Live Demo';
+
+      const codeBtn = el("a", "btn btn-secondary");
+      codeBtn.href = p.source;
+      codeBtn.target = "_blank";
+      codeBtn.innerHTML = '<i class="fab fa-github"></i> Source Code';
+
+      actions.append(demoBtn, codeBtn);
+      body.append(title, desc, actions);
+      card.append(thumb, body);
+      grid.append(card);
+    });
+
+    levelSection.append(grid);
+    projectsContainer.append(levelSection);
   });
 }
 
