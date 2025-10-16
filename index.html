@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -19,248 +19,353 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="nav">
-      <a href="#" class="logo">
-        <i class="fas fa-code"></i>
-        <span>Ajinkya Furange</span>
-      </a>
+  </head> -->
 
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-      <label for="menu-toggle" class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <div class="links">
-        <a href="#hero">Home</a>
-        <a href="#offer-letter">Offer Letter</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-      </div>
-    </nav>
+      <!-- Primary Meta Tags -->
+      <title>
+        Ajinkya Furange's Cognifyz Technologies Internship Projects Portfolio
+      </title>
+      <meta
+        name="title"
+        content="Ajinkya Furange's Cognifyz Technologies Internship Projects Portfolio"
+      />
+      <meta
+        name="description"
+        content="Explore web development projects by Ajinkya Furange completed during Cognifyz Technologies internship. Features responsive designs, interactive UI components, and modern web solutions."
+      />
+      <meta
+        name="keywords"
+        content="Ajinkya Furange, Cognifyz Technologies, internship projects, web development, portfolio, HTML, CSS, JavaScript, Bootstrap, Bulma"
+      />
+      <meta name="author" content="Ajinkya Furange" />
+      <meta name="robots" content="index, follow" />
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-      <div class="hero-background">
-        <div class="tech-pattern"></div>
-      </div>
-      <div class="container">
-        <div class="hero-content">
-          <h1 class="hero-title">
-            <span class="gradient-text">Cognifyz Internship Projects</span>
-            <br />by Ajinkya Furange
-          </h1>
-          <p class="hero-subtitle">
-            A showcase of real-world web applications built during my web
-            development internship at Cognifyz Technologies
-          </p>
-          <div class="hero-buttons">
-            <button
-              class="btn btn-primary"
-              onclick="scrollToSection('projects')"
-            >
-              <i class="fas fa-rocket"></i>
-              Explore Projects
-            </button>
-            <a
-              href="https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/"
-              target="_blank"
-              class="btn btn-secondary"
-            >
-              <i class="fab fa-github"></i>
-              View Repository
-            </a>
-          </div>
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:url"
+        content="https://ajinkya-furange-patil.github.io/cognifyzTechnologies/"
+      />
+      <meta
+        property="og:title"
+        content="Ajinkya Furange's Cognifyz Technologies Internship Projects"
+      />
+      <meta
+        property="og:description"
+        content="Web development project showcase from Cognifyz Technologies internship - Responsive designs, interactive components, and modern solutions by Ajinkya Furange."
+      />
+      <meta property="og:image" content="Level 3/Task 2/demo.png" />
+
+      <!-- Twitter -->
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta
+        property="twitter:url"
+        content="https://ajinkya-furange-patil.github.io/cognifyzTechnologies/"
+      />
+      <meta
+        property="twitter:title"
+        content="Ajinkya Furange's Cognifyz Technologies Internship Projects"
+      />
+      <meta
+        property="twitter:description"
+        content="Web development project showcase from Cognifyz Technologies internship - Responsive designs, interactive components, and modern solutions by Ajinkya Furange."
+      />
+      <meta property="twitter:image" content="Level 3/Task 2/demo.png" />
+
+      <!-- Canonical URL -->
+      <link
+        rel="canonical"
+        href="https://ajinkya-furange-patil.github.io/cognifyzTechnologies/"
+      />
+
+      <!-- Existing styles -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+      <link rel="stylesheet" href="styles.css" />
+
+      <!-- Schema.org markup -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfilePage",
+          "mainEntity": {
+            "@type": "Person",
+            "name": "Ajinkya Furange",
+            "url": "https://ajinkya-furange-patil.github.io/cognifyzTechnologies/",
+            "sameAs": [
+              "https://github.com/Ajinkya-Furange-Patil",
+              "https://www.linkedin.com/in/ajinkya-furange-7043aa34b/"
+            ],
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Cognifyz Technologies",
+              "url": "https://cognifyz.com/"
+            },
+            "description": "Web Development Intern at Cognifyz Technologies"
+          }
+        }
+      </script>
+    </head>
+
+    <body>
+      <!-- Navigation -->
+      <nav class="nav">
+        <a href="#" class="logo">
+          <i class="fas fa-code"></i>
+          <span>Ajinkya Furange</span>
+        </a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <div class="links">
+          <a href="#hero">Home</a>
+          <a href="#offer-letter">Offer Letter</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
         </div>
-      </div>
-      <div class="scroll-indicator">
-        <div class="scroll-arrow"></div>
-      </div>
-    </section>
+      </nav>
 
-    <!-- Offer Letter Section -->
-    <section id="offer-letter" class="offer-letter">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Official Internship Offer Letter</h2>
-          <p class="section-subtitle">
-            I was offered an internship at Cognifyz Technologies, where I worked
-            on multiple real-world web development tasks and projects.
-          </p>
+      <!-- Hero Section -->
+      <section id="hero" class="hero">
+        <div class="hero-background">
+          <div class="tech-pattern"></div>
         </div>
-        <div class="offer-letter-content">
-          <div class="offer-letter-card">
-            <div class="offer-letter-image">
-              <img
-                src="offerLetter.png"
-                alt="Cognifyz Technologies Offer Letter"
-                id="offerLetterImg"
-              />
-              <div class="image-overlay">
-                <button class="btn btn-light" onclick="openOfferLetterModal()">
-                  <i class="fas fa-expand-alt"></i>
-                  View Full Size
-                </button>
-              </div>
-            </div>
-            <div class="offer-letter-actions">
-              <a
-                href="Offer Letter of Ajinkya Nitesh Furange.pdf"
-                download
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              <span class="gradient-text">Cognifyz Internship Projects</span>
+              <br />by Ajinkya Furange
+            </h1>
+            <p class="hero-subtitle">
+              A showcase of real-world web applications built during my web
+              development internship at Cognifyz Technologies
+            </p>
+            <div class="hero-buttons">
+              <button
                 class="btn btn-primary"
+                onclick="scrollToSection('projects')"
               >
-                <i class="fas fa-download"></i>
-                Download PDF
+                <i class="fas fa-rocket"></i>
+                Explore Projects
+              </button>
+              <a
+                href="https://github.com/Ajinkya-Furange-Patil/cognifyzTechnologies/"
+                target="_blank"
+                class="btn btn-secondary"
+              >
+                <i class="fab fa-github"></i>
+                View Repository
               </a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Projects Gallery Section -->
-    <section id="projects" class="projects">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Project Gallery</h2>
-          <p class="section-subtitle">
-            Explore the collection of web applications and interactive projects
-            developed during the internship
-          </p>
+        <div class="scroll-indicator">
+          <div class="scroll-arrow"></div>
         </div>
+      </section>
 
-        <!-- Level Sections -->
-        <div id="projectsContainer"></div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="about-content">
-          <div class="about-text">
-            <h2 class="section-title">About This Internship</h2>
-            <p>
-              A comprehensive collection of web development projects completed
-              during my internship at Cognifyz Technologies. This repository
-              showcases solutions to various problem statements across three
-              skill levels, demonstrating progressive learning in HTML, CSS, and
-              JavaScript.
+      <!-- Offer Letter Section -->
+      <section id="offer-letter" class="offer-letter">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Official Internship Offer Letter</h2>
+            <p class="section-subtitle">
+              I was offered an internship at Cognifyz Technologies, where I
+              worked on multiple real-world web development tasks and projects.
             </p>
-            <p>
-              Each project in this portfolio represents a unique challenge that
-              helped me grow as a developer, from front-end user interfaces to
-              back-end functionality and database integration.
-            </p>
-            <div class="tech-stack">
-              <h3>Technologies Used</h3>
-              <div class="tech-icons">
-                <span class="tech-item"
-                  ><i class="fab fa-html5"></i> HTML5</span
-                >
-                <span class="tech-item"
-                  ><i class="fab fa-css3-alt"></i> CSS3</span
-                >
-                <span class="tech-item"
-                  ><i class="fab fa-js-square"></i> JavaScript</span
-                >
-
-                <span class="tech-item"
-                  ><i class="fas fa-database"></i> Bulma</span
-                >
-                <span class="tech-item"
-                  ><i class="fab fa-bootstrap"></i> Bootstrap</span
-                >
-              </div>
-            </div>
           </div>
-          <div class="about-timeline">
-            <h3>Internship Progress</h3>
-            <div class="timeline">
-              <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <h4>Level 1</h4>
-                  <p>Foundation projects and UI development</p>
+          <div class="offer-letter-content">
+            <div class="offer-letter-card">
+              <div class="offer-letter-image">
+                <img
+                  src="offerLetter.png"
+                  alt="Cognifyz Technologies Offer Letter"
+                  id="offerLetterImg"
+                />
+                <div class="image-overlay">
+                  <button
+                    class="btn btn-light"
+                    onclick="openOfferLetterModal()"
+                  >
+                    <i class="fas fa-expand-alt"></i>
+                    View Full Size
+                  </button>
                 </div>
               </div>
-              <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <h4>Level 2</h4>
-                  <p>Basic JavaScript interactive parts added.</p>
-                </div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <h4>Level 3</h4>
-                  <p>Landing Pages and Responsive Bulilding</p>
-                </div>
+              <div class="offer-letter-actions">
+                <a
+                  href="Offer Letter of Ajinkya Nitesh Furange.pdf"
+                  download
+                  class="btn btn-primary"
+                >
+                  <i class="fas fa-download"></i>
+                  Download PDF
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-links">
-            <a
-              href="https://github.com/Ajinkya-Furange-Patil"
-              target="_blank"
-              class="footer-link"
-            >
-              <i class="fab fa-github"></i>
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/ajinkya-furange-7043aa34b/"
-              target="_blank"
-              class="footer-link"
-            >
-              <i class="fab fa-linkedin"></i>
-              LinkedIn
-            </a>
-            <a href="mailto:ajinkyafurange@zohomail.in" class="footer-link">
-              <i class="fas fa-envelope"></i>
-              Email
-            </a>
+      <!-- Projects Gallery Section -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Project Gallery</h2>
+            <p class="section-subtitle">
+              Explore the collection of web applications and interactive
+              projects developed during the internship
+            </p>
           </div>
-          <div class="footer-copyright">
-            <p>&copy; 2025 Ajinkya Furange — All Rights Reserved.</p>
+
+          <!-- Level Sections -->
+          <div id="projectsContainer"></div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <h2 class="section-title">About This Internship</h2>
+              <p>
+                A comprehensive collection of web development projects completed
+                during my internship at Cognifyz Technologies. This repository
+                showcases solutions to various problem statements across three
+                skill levels, demonstrating progressive learning in HTML, CSS,
+                and JavaScript.
+              </p>
+              <p>
+                Each project in this portfolio represents a unique challenge
+                that helped me grow as a developer, from front-end user
+                interfaces to back-end functionality and database integration.
+              </p>
+              <div class="tech-stack">
+                <h3>Technologies Used</h3>
+                <div class="tech-icons">
+                  <span class="tech-item"
+                    ><i class="fab fa-html5"></i> HTML5</span
+                  >
+                  <span class="tech-item"
+                    ><i class="fab fa-css3-alt"></i> CSS3</span
+                  >
+                  <span class="tech-item"
+                    ><i class="fab fa-js-square"></i> JavaScript</span
+                  >
+
+                  <span class="tech-item"
+                    ><i class="fas fa-database"></i> Bulma</span
+                  >
+                  <span class="tech-item"
+                    ><i class="fab fa-bootstrap"></i> Bootstrap</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="about-timeline">
+              <h3>Internship Progress</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <h4>Level 1</h4>
+                    <p>Foundation projects and UI development</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <h4>Level 2</h4>
+                    <p>Basic JavaScript interactive parts added.</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <h4>Level 3</h4>
+                    <p>Landing Pages and Responsive Bulilding</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-links">
+              <a
+                href="https://github.com/Ajinkya-Furange-Patil"
+                target="_blank"
+                class="footer-link"
+              >
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ajinkya-furange-7043aa34b/"
+                target="_blank"
+                class="footer-link"
+              >
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+              </a>
+              <a href="mailto:ajinkyafurange@zohomail.in" class="footer-link">
+                <i class="fas fa-envelope"></i>
+                Email
+              </a>
+            </div>
+            <div class="footer-copyright">
+              <p>&copy; 2025 Ajinkya Furange — All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Offer Letter Modal -->
+      <div class="modal" id="offerLetterModal">
+        <div class="modal-content">
+          <span class="modal-close" onclick="closeOfferLetterModal()"
+            >&times;</span
+          >
+          <img
+            src="offerLetter.png"
+            alt="Cognifyz Technologies Offer Letter"
+            id="modalOfferLetterImg"
+          />
+        </div>
       </div>
-    </footer>
 
-    <!-- Offer Letter Modal -->
-    <div class="modal" id="offerLetterModal">
-      <div class="modal-content">
-        <span class="modal-close" onclick="closeOfferLetterModal()"
-          >&times;</span
-        >
-        <img
-          src="offerLetter.png"
-          alt="Cognifyz Technologies Offer Letter"
-          id="modalOfferLetterImg"
-        />
+      <!-- Loading Screen -->
+      <div class="loading-screen" id="loadingScreen">
+        <div class="loading-spinner"></div>
+        <p>Loading Projects...</p>
       </div>
-    </div>
 
-    <!-- Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-      <div class="loading-spinner"></div>
-      <p>Loading Projects...</p>
-    </div>
-
-    <script src="script.js"></script>
-  </body>
+      <script src="script.js"></script>
+    </body>
+  </html>
 </html>
