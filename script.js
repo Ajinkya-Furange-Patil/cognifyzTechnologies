@@ -161,17 +161,6 @@ function scrollToSection(id) {
 }
 
 // -----------------------------
-// Navbar: Mobile toggle
-// -----------------------------
-const hamburger = document.getElementById("hamburger");
-const navMenu = document.querySelector(".nav-menu");
-if (hamburger) {
-  hamburger.addEventListener("click", () => {
-    navMenu.style.display = navMenu.style.display === "flex" ? "none" : "flex";
-  });
-}
-
-// -----------------------------
 // Theme toggle (light/dark)
 // -----------------------------
 const themeToggle = document.getElementById("themeToggle");

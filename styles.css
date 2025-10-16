@@ -142,6 +142,11 @@
   --container-md: 768px;
   --container-lg: 1024px;
   --container-xl: 1280px;
+
+  /* Add these to your existing root variables */
+  --nav-bg: var(--color-charcoal-700);
+  --nav-fg: var(--color-gray-200);
+  --accent: var(--color-primary);
 }
 
 /* Dark mode colors */
@@ -1576,4 +1581,138 @@ body {
 .light .loading-screen {
   background: rgba(255, 255, 255, 0.8);
 }
-/* ``` */
+
+/* Add these styles to your existing CSS file */
+
+:root {
+  /* Add these to your existing root variables */
+  --nav-bg: var(--color-charcoal-700);
+  --nav-fg: var(--color-gray-200);
+  --accent: var(--color-primary);
+}
+
+/* Replace your existing navbar styles with these */
+.nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: var(--nav-bg);
+  color: var(--nav-fg);
+  z-index: 1000;
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: saturate(140%) blur(10px);
+  border-bottom: 1px solid var(--border-glass);
+}
+
+.logo {
+  color: var(--nav-fg);
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-tight);
+  display: flex;
+  gap: var(--space-10);
+  align-items: center;
+}
+
+.logo i {
+  color: var(--color-primary);
+  text-shadow: 0 0 14px rgba(var(--color-teal-300-rgb), 0.6);
+}
+
+.links {
+  display: flex;
+  gap: 18px;
+}
+
+.links a {
+  color: var(--nav-fg);
+  text-decoration: none;
+  padding: 10px 8px;
+  border-radius: var(--radius-md);
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.links a:hover {
+  background: var(--glass);
+  color: #fff;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  width: 40px;
+  height: 36px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: var(--radius-md);
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: var(--nav-fg);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  border-radius: var(--radius-sm);
+}
+
+.menu-toggle {
+  position: absolute;
+  left: -9999px;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .links {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60px;
+    background: var(--nav-bg);
+    display: grid;
+    gap: 0;
+    border-top: 1px solid var(--border-glass);
+    transform: translateY(-10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--duration-normal) var(--ease-standard);
+    backdrop-filter: saturate(140%) blur(10px);
+  }
+
+  .links a {
+    padding: 14px 16px;
+    border-radius: 0;
+  }
+
+  .links a + a {
+    border-top: 1px solid var(--border-glass);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .menu-toggle:checked ~ .links {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .menu-toggle:checked + .hamburger span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menu-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle:checked + .hamburger span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
